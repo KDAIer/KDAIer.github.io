@@ -23,14 +23,14 @@
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Dai Ma">
+<meta property="og:title" content="About Dai Ma">
 <meta property="og:url" content="http://example.com/about/index.html">
 <meta property="og:site_name" content="KDAIer&#39;s Blog">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/redefine-og.webp">
-<meta property="article:published_time" content="2023-05-14T03:45:14.000Z">
-<meta property="article:modified_time" content="2025-05-05T07:22:26.078Z">
+<meta property="article:published_time" content="2025-07-21T06:00:00.000Z">
+<meta property="article:modified_time" content="2025-07-21T06:37:20.622Z">
 <meta property="article:author" content="KDAIer">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/redefine-og.webp">
@@ -45,7 +45,7 @@
     
     <title>
         
-            Dai Ma | KDAIer&#39;s Blog
+            About Dai Ma | KDAIer&#39;s Blog
         
     </title>
 
@@ -117,562 +117,255 @@
 
 
 	<body>
-		<div class="progress-bar-container">
-	
+		<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Dai Ma</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-	
-	<span class="pjax-progress-bar"></span>
-	<!--        <span class="swup-progress-icon">-->
-	<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
-	<!--        </span>-->
-	
-</div>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            color: #444;
+            background-color: #fdfdfd;
+        }
 
-<main class="page-container" id="swup">
+        .custom-about-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
 
-	
+        .custom-about-container h1, .custom-about-container h2, .custom-about-container h3 {
+            font-weight: 700;
+            border-bottom: none;
+            color: #2c3e50;
+        }
 
-	<div class="main-content-container flex flex-col justify-between min-h-dvh">
-		<div class="main-content-header">
-			<header class="navbar-container px-6 md:px-12">
-    <div class="navbar-content transition-navbar ">
-        <div class="left">
-            
-                <a class="logo-image h-8 w-8 sm:w-10 sm:h-10 mr-3" href="/">
-                    <img src="/images/KDAIer_Carnival.webp" class="w-full h-full rounded-sm">
+        .profile-header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 20px 0;
+        }
+
+        .profile-header h1 {
+            font-size: 3em;
+            margin: 20px 0 10px;
+            font-family: 'Geist', sans-serif;
+        }
+
+        .profile-header .subtitle {
+            font-size: 1.25em;
+            color: #555;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            font-size: 1.9em;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #3498db;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section ul li {
+            padding-left: 30px;
+            margin-bottom: 15px;
+            position: relative;
+            font-size: 1.05em;
+        }
+        
+        .section ul li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: 600;
+        }
+
+        .project-card {
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-left: 5px solid #3498db;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            font-size: 1.4em;
+        }
+        
+        .project-card h3 a {
+            text-decoration: none;
+            color: #2980b9;
+        }
+         .project-card h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .project-card .role {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            padding: 10px 0;
+        }
+
+        .tech-stack img {
+            transition: transform 0.2s ease;
+        }
+        .tech-stack img:hover {
+            transform: scale(1.1);
+        }
+
+        .github-stats {
+            text-align: center;
+        }
+        .github-stats img {
+            margin: 10px auto;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-about-container">
+        <div class="profile-header">
+            <h1>𝙃𝙚𝙡𝙡𝙤, 𝙄'𝙢 Dai Ma</h1>
+            <p class="subtitle">A Computer Science undergrad at Sun Yat-sen University, passionate about Text Analytics, Data Mining, and Recommendation Systems.</p>
+        </div>
+
+        <div class="section">
+            <h2>> About Me</h2>
+            <p>
+                I am a dedicated and self-driven student with a solid grounding in algorithms, data structures, and software engineering. My academic and project experiences have equipped me with strong problem-solving skills, enabling me to lead multiple deep learning projects from conception to deployment. I am deeply passionate about academic research and aspire to pursue a Ph.D. to contribute to the advancement of text analysis and data mining.
+            </p>
+            <ul>
+                <li><strong>📧 Email:</strong> <a href="mailto:madai@mail2.sysu.edu.cn">madai@mail2.sysu.edu.cn</a></li>
+                <li><strong>🐱 GitHub:</strong> <a href="https://github.com/KDAIer" target="_blank">KDAIer</a></li>
+                <li><strong>📞 Phone:</strong> +86 198 6489 5373</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>> Research Experience</h2>
+            <div class="project-card">
+                <h3>Research Assistant, HKUST</h3>
+                <p class="role">Supervisor: Prof. Zixuan Yuan | Apr. 2025 – Present</p>
+                <p>Focused on Multimodal Large Language Models (LLMs). My work involves developing and evaluating Retrieval-Augmented Generation (RAG) systems to enhance model performance by integrating external knowledge, aiming to improve reasoning and reduce hallucinations in complex question-answering tasks.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>> Key Projects</h2>
+
+            <div class="project-card">
+                <h3><a href="https://github.com/KDAIer/LangGraph-deploy" target="_blank">Retrieval-Augmented Generation (RAG) System</a></h3>
+                <p class="role">Project Lead & Developer</p>
+                <p>Developed a comprehensive RAG system designed to enhance large language models by retrieving relevant, up-to-date information from external knowledge bases before generating responses. This project explores advanced indexing and retrieval strategies to improve answer accuracy.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Risk Control Driven Adversarial Spam Text Detection</h3>
+                <p class="role">Project Leader</p>
+                <p>Engineered an end-to-end spam detection pipeline. A key innovation was a character similarity network designed to identify and neutralize adversarial text variants in Chinese, which significantly boosted recall and F1-score in risk control scenarios.</p>
+            </div>
+
+            <div class="project-card">
+                <h3><a href="https://github.com/sysu-orz/yatmosphere" target="_blank"></a>Integrated Smart Home Device Control System</h3>
+                <p class="role">Project Leader</p>
+                <p>Built a unified platform managing IoT devices (lighting, HVAC, security) via web/mobile. Developed dynamic device discovery, scene creation, and a middleware to unify MQTT, ZigBee, BLE, and HTTP protocols with a consistent backend API.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>> Other Projects & Coursework</h2>
+
+            <div class="project-card">
+                <h3><a href="https://github.com/KDAIer/CS-Review" target="_blank">CS-Review: A Study Guide for SYSU CS Undergrads</a></h3>
+                <p class="role">Creator & Maintainer</p>
+                <p>Initiated and maintained a knowledge-sharing repository for computer science students at Sun Yat-sen University. This project consolidates study notes, exam materials, and learning resources to foster a collaborative academic environment.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Maximizing National Performance in the Olympic Games</h3>
+                <p class="role">Project Leader, COMAP MCM</p>
+                <p>Built a medal prediction system combining XGBoost, BP neural network, and multivariate regression, achieving 90% F1 for medal types and forecasting future results.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Image Classification: Optimization and Model Comparison</h3>
+                <p class="role">Project Leader</p>
+                <p>Enhanced CIFAR-10 classification by comparing Softmax, MLP, and CNN in PyTorch. Tuned various optimizers, where Adam achieved 30% faster convergence and a CNN accuracy of 70%.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>> Awards & Honors</h2>
+            <ul>
+                <li>Meritorious Winner, Mathematical Contest in Modeling (MCM/ICM) - 2025</li>
+                <li>Bronze Prize, Sun Yat-sen University Programming Contest - 2024</li>
+                <li>Third Prize, University-level Scholarship, Sun Yat-sen University - 2024</li>
+                <li>Third Prize, Guangdong Province, National Undergraduate Mathematics Competition - 2023</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>> My GitHub Stats 📈</h2>
+            <div class="github-stats">
+                <a target="_blank" rel="noopener" href="https://github.com/KDAIer">
+                    <img src="https://github-readme-stats.vercel.app/api?username=KDAIer&show_icons=true&theme=dracula&count_private=true&hide_border=true" alt="KDAIer's GitHub Stats" />
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KDAIer&layout=compact&theme=dracula&hide_border=true" alt="Top Languages" />
                 </a>
-            
-            <a class="logo-title" href="/">
-                
-                KDAIer&#39;s Blog
-                
-            </a>
+            </div>
         </div>
 
-        <div class="right">
-            <!-- PC -->
-            <div class="desktop">
-                <ul class="navbar-list">
-                    
-                        
-                            
-
-                            <li class="navbar-item">
-                                <!-- Menu -->
-                                <a class=""
-                                   href="/"
-                                        >
-                                    <i class="fa-regular fa-house fa-fw"></i>
-                                    HOME
-                                    
-                                </a>
-
-                                <!-- Submenu -->
-                                
-                            </li>
-                    
-                        
-                            
-
-                            <li class="navbar-item">
-                                <!-- Menu -->
-                                <a class=""
-                                   href="/archives"
-                                        >
-                                    <i class="fa-regular fa-archive fa-fw"></i>
-                                    ARCHIVES
-                                    
-                                </a>
-
-                                <!-- Submenu -->
-                                
-                            </li>
-                    
-                        
-                            
-
-                            <li class="navbar-item">
-                                <!-- Menu -->
-                                <a class=""
-                                   href="/tags/"
-                                        >
-                                    <i class="fa-solid fa-tags fa-fw"></i>
-                                    TAGS
-                                    
-                                </a>
-
-                                <!-- Submenu -->
-                                
-                            </li>
-                    
-                        
-                            
-
-                            <li class="navbar-item">
-                                <!-- Menu -->
-                                <a class="has-dropdown"
-                                   href="#"
-                                        onClick=&#34;return false;&#34;>
-                                    <i class="fa-regular fa-user fa-fw"></i>
-                                    ABOUT
-                                    <i class="fa-solid fa-chevron-down fa-fw"></i>
-                                </a>
-
-                                <!-- Submenu -->
-                                
-                                    <ul class="sub-menu">
-                                        
-                                            <li>
-                                                <a href="/about">
-                                                    ME
-                                                </a>
-                                            </li>
-                                        
-                                            <li>
-                                                <a target="_blank" rel="noopener" href="https://github.com/KDAIer">
-                                                    GITHUB
-                                                </a>
-                                            </li>
-                                        
-                                    </ul>
-                                
-                            </li>
-                    
-                        
-                            
-
-                            <li class="navbar-item">
-                                <!-- Menu -->
-                                <a class=""
-                                   href="/links/"
-                                        >
-                                    <i class="fa-solid fa-link fa-fw"></i>
-                                    FRIENDS
-                                    
-                                </a>
-
-                                <!-- Submenu -->
-                                
-                            </li>
-                    
-                    
-                </ul>
-            </div>
-            <!-- Mobile -->
-            <div class="mobile">
-                
-                <div class="icon-item navbar-bar">
-                    <div class="navbar-bar-middle"></div>
-                </div>
+        <div class="section">
+            <h2>> My Tech Stack</h2>
+            <div class="tech-stack">
+                <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
+                <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+                <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+                <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
+                <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn">
+                <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue.js">
+                <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+                <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+                <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
             </div>
         </div>
     </div>
-
-    <!-- Mobile sheet -->
-    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
-        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
-            
-                
-                    
-
-                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
-                        
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
-                           href="/"
-                        >
-                            <span>
-                                HOME
-                            </span>
-                            
-                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
-                            
-                        </a>
-                        
-
-                        
-                    </li>
-            
-                
-                    
-
-                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
-                        
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
-                           href="/archives"
-                        >
-                            <span>
-                                ARCHIVES
-                            </span>
-                            
-                                <i class="fa-regular fa-archive fa-sm fa-fw"></i>
-                            
-                        </a>
-                        
-
-                        
-                    </li>
-            
-                
-                    
-
-                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
-                        
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
-                           href="/tags/"
-                        >
-                            <span>
-                                TAGS
-                            </span>
-                            
-                                <i class="fa-solid fa-tags fa-sm fa-fw"></i>
-                            
-                        </a>
-                        
-
-                        
-                    </li>
-            
-                
-                    
-
-                    <li class="drawer-navbar-item-sub text-base my-1.5 flex flex-col w-full">
-                        
-                        <div class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary cursor-pointer text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
-                             navbar-data-toggle="submenu-About"
-                        >
-                            <span>
-                                ABOUT
-                            </span>
-                            
-                                <i class="fa-solid fa-chevron-right fa-sm fa-fw transition-all"></i>
-                            
-                        </div>
-                        
-
-                        
-                            <div class="flex-col items-start px-2 py-2 hidden" data-target="submenu-About">
-                                
-                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
-                                        <a class=" text-third-text-color text-xl"
-                                           href="/about">ME</a>
-                                    </div>
-                                
-                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
-                                        <a class=" text-third-text-color text-xl"
-                                           target="_blank" rel="noopener" href="https://github.com/KDAIer">GITHUB</a>
-                                    </div>
-                                
-                            </div>
-                        
-                    </li>
-            
-                
-                    
-
-                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
-                        
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
-                           href="/links/"
-                        >
-                            <span>
-                                FRIENDS
-                            </span>
-                            
-                                <i class="fa-solid fa-link fa-sm fa-fw"></i>
-                            
-                        </a>
-                        
-
-                        
-                    </li>
-            
-
-            
-            
-        </ul>
-
-        <div class="statistics flex justify-around my-2.5">
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
-        <div class="label text-third-text-color text-sm">Tags</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
-        <div class="label text-third-text-color text-sm">Categories</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
-        <div class="label text-third-text-color text-sm">Posts</div>
-    </a>
-</div>
-    </div>
-
-    <div class="window-mask"></div>
-
-</header>
-
-
-		</div>
-
-		<div class="main-content-body transition-fade-up">
-			
-
-			<div class="main-content">
-				<div class="page-template-container">
-	
-
-	
-
-	<div class="page-template-content markdown-body">
-		
-		<h1>Dai Ma</h1>
-		
-
-		<div style="display: flex; align-items: flex-start; gap: 1em;">
-
-  <div>
-    <ul style="list-style: none; padding: 0; margin: 0;">
-      <li><strong>Phone:</strong> +86 19864895373</li>
-      <li><strong>Email:</strong> <a class="link"   href="mailto:1425529116@qq.com" >1425529116@qq.com<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
-      <li><strong>WeChat:</strong> hjdch467327</li>
-      <li><strong>Date of Birth:</strong> 2004-09-24</li>
-      <li><strong>Research Interests:</strong> Text Analytics, Data Mining, Recommendation Systems</li>
-    </ul>
-  </div>
-
-  <div style="margin-left: auto;">
-    <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/profile.png"
-                      alt="Profile" style="max-width: 150px; height: auto; border-radius: 50%;" 
-                >
-  </div>
-
-</div>
-
-<hr>
-<h2 id="Self-Evaluation"><a href="#Self-Evaluation" class="headerlink" title="Self-Evaluation"></a>Self-Evaluation</h2><p>Driven by a solid grounding in algorithms, data structures, and software engineering, I have independently led multiple deep learning and computer vision projects using C++, Python, and PyTorch, demonstrating expertise in model design, optimization, and performance analysis. My analytical, data-driven mindset enables me to decompose complex challenges and deliver robust solutions. I excel in collaborative environments through clear communication and thrive in independent research by rapidly mastering new technologies. Passionate about scholarly exploration, I am dedicated to advancing text analysis and data mining theory and applications, with a strong aspiration to pursue doctoral studies and contribute to cutting-edge academic research.</p>
-<hr>
-<h2 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h2><p><strong>Sun Yat-sen University</strong> — B.Eng. in Computer Science and Technology<em>Sept. 2022 – Jun. 2026</em></p>
-<ul>
-<li><strong>Core Courses:</strong> Data Mining and Machine Learning (96), Optimization Theory (92), Artificial Intelligence (91), Operating Systems (93), Computer Organization (91), Data Structures and Algorithms (95)</li>
-<li><strong>Academic Performance:</strong> GPA 4.0&#x2F;5.0 (Top 15 %, Rank: 44&#x2F;321); average score of all courses above 90</li>
-<li><strong>Awards:</strong><ul>
-<li>2023 Third Prize, Guangdong Province, National Undergraduate Mathematics Competition</li>
-<li>2024 Bronze Prize, Sun Yat-sen University Programming Contest</li>
-<li>2024 Third Prize, University-level Scholarship, Sun Yat-sen University</li>
-<li>2025 Meritorious Winner, Mathematical Contest in Modeling (MCM&#x2F;ICM)</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Research-Projects"><a href="#Research-Projects" class="headerlink" title="Research Projects"></a>Research Projects</h2><h3 id="Risk-Control-Driven-Adversarial-Spam-Text-Detection-via-Character-Similarity-Network"><a href="#Risk-Control-Driven-Adversarial-Spam-Text-Detection-via-Character-Similarity-Network" class="headerlink" title="Risk Control Driven Adversarial Spam Text Detection via Character Similarity Network"></a>Risk Control Driven Adversarial Spam Text Detection via Character Similarity Network</h3><p><strong>Project Leader</strong> · Apr. 2025 – Present</p>
-<ul>
-<li>Designed end-to-end spam detection pipeline: multi-source dataset collection, HTML stripping, lowercasing, regex cleaning, jieba tokenization, stop-word removal, BOW&#x2F;TF-IDF&#x2F;n-gram features.</li>
-<li>Developed a character similarity network with glyph &amp; phonetic codes, precomputed similarity matrix for adversarial Chinese variants; learned robust embeddings via graph clustering; trained LR and SVM classifiers.</li>
-<li>Conducted experiments on clean vs. adversarial data, significantly improved recall and F1; fine-tuned similarity thresholds.</li>
-</ul>
-<h3 id="Integrated-Smart-Home-Device-Control-System"><a href="#Integrated-Smart-Home-Device-Control-System" class="headerlink" title="Integrated Smart Home Device Control System"></a>Integrated Smart Home Device Control System</h3><p><strong>Project Leader</strong> · Apr. 2025 – Present</p>
-<ul>
-<li>Built unified platform managing IoT devices (lighting, HVAC, security) via web&#x2F;mobile.</li>
-<li>Developed dynamic device discovery and lifecycle operations; scene creation, scheduler, event-driven scripts.</li>
-<li>Designed middleware to unify MQTT, ZigBee, BLE, HTTP protocols with consistent backend API; modular Vue.js + Node.js&#x2F;Express + MySQL + MQTT architecture.</li>
-</ul>
-<h3 id="Maximizing-National-Performance-in-the-Olympic-Games"><a href="#Maximizing-National-Performance-in-the-Olympic-Games" class="headerlink" title="Maximizing National Performance in the Olympic Games"></a>Maximizing National Performance in the Olympic Games</h3><p><strong>Project Leader, COMAP MCM</strong> · Sept. 2024 – Dec. 2024</p>
-<ul>
-<li>Built medal prediction system combining XGBoost, BP neural network, chi-square tests, multivariate regression. Achieved 90 % F1 for medal types.</li>
-<li>Sensitivity analysis confirmed robustness (F1 variation &lt; 5 %).</li>
-<li>Forecasted 120 medals for the USA in 2028; 42 % chance for Nepal’s first track &amp; field medal.</li>
-</ul>
-<h3 id="Image-Classification-Optimization-and-Model-Comparison"><a href="#Image-Classification-Optimization-and-Model-Comparison" class="headerlink" title="Image Classification: Optimization and Model Comparison"></a>Image Classification: Optimization and Model Comparison</h3><p><strong>Project Leader</strong> · Sept. 2024 – Dec. 2024</p>
-<ul>
-<li>Enhanced CIFAR-10 classification by comparing Softmax, MLP, and CNN in PyTorch; data augmentation &amp; normalization.</li>
-<li>Tuned SGD, momentum, Adam; Adam achieved 30 % faster convergence, 40 % lower loss volatility; CNN reached 70 % accuracy.</li>
-</ul>
-<hr>
-<h2 id="Skills-Proficiencies"><a href="#Skills-Proficiencies" class="headerlink" title="Skills &amp; Proficiencies"></a>Skills &amp; Proficiencies</h2><ul>
-<li><strong>Programming:</strong> C++, Python, SQL</li>
-<li><strong>ML &amp; DL:</strong> scikit-learn, TensorFlow, PyTorch; algorithms (regression, classification, clustering, ensembles), architectures (CNNs, RNNs, Transformers)</li>
-<li><strong>Foundations:</strong> Operating Systems (Linux, Windows), Computer Networks, Database Systems</li>
-</ul>
-
-	</div>
-
-	<div class="page-template-comments">
-		
-	</div>
-</div>
-
-<div class="paginator">
-	
-</div>
-  
-			</div>
-
-			
-		</div>
-
-		<div class="main-content-footer">
-			<footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
-    <div class="info-container py-3 text-center">
-        
-        <div class="text-center">
-            &copy;
-            
-              <span>2022</span>
-              -
-            
-            2025&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">KDAIer</a>
-            
-                
-                <p class="post-count space-x-0.5">
-                    <span>
-                        3 posts in total
-                    </span>
-                    
-                        <span>
-                            18.6k words in total
-                        </span>
-                    
-                </p>
-            
-        </div>
-        
-            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
-            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
-                
-                    <span id="busuanzi_container_site_uv" class="lg:!block">
-                        <span class="text-sm">VISITOR COUNT</span>
-                        <span id="busuanzi_value_site_uv"></span>
-                    </span>
-                
-                
-                    <span id="busuanzi_container_site_pv" class="lg:!block">
-                        <span class="text-sm">TOTAL PAGE VIEWS</span>
-                        <span id="busuanzi_value_site_pv"></span>
-                    </span>
-                
-            </div>
-        
-        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
-            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
-            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.8.2</a></span>
-        </div>
-        
-        
-            <div>
-                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
-            </div>
-        
-        
-            <script data-swup-reload-script>
-                try {
-                    function odometer_init() {
-                    const elements = document.querySelectorAll('.odometer');
-                    elements.forEach(el => {
-                        new Odometer({
-                            el,
-                            format: '( ddd).dd',
-                            duration: 200
-                        });
-                    });
-                    }
-                    odometer_init();
-                } catch (error) {}
-            </script>
-        
-        
-        
-    </div>  
-</footer>
-		</div>
-	</div>
-
-	
-
-	<div class="right-side-tools-container">
-		<div class="side-tools-container">
-	<ul class="hidden-tools-list">
-		<li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
-			<i class="fa-regular fa-magnifying-glass-plus"></i>
-		</li>
-
-		<li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
-			<i class="fa-regular fa-magnifying-glass-minus"></i>
-		</li>
-
-		<li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
-			<i class="fa-regular fa-moon"></i>
-		</li>
-
-		<!-- rss -->
-		
-
-		
-
-		<li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
-			<i class="fa-regular fa-arrow-down"></i>
-		</li>
-	</ul>
-
-	<ul class="visible-tools-list">
-		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
-			<i class="fa-regular fa-cog fa-spin"></i>
-		</li>
-		
-		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
-			<i class="arrow-up fas fa-arrow-up"></i>
-			<span class="percent"></span>
-		</li>
-		
-		
-	</ul>
-</div>
-	</div>
-
-	<div class="image-viewer-container">
-	<img src="">
-</div>
-
-	
-
-</main>
-
-
-
-<script src="/js/build/libs/Swup.min.js"></script>
-
-<script src="/js/build/libs/SwupSlideTheme.min.js"></script>
-
-<script src="/js/build/libs/SwupScriptsPlugin.min.js"></script>
-
-<script src="/js/build/libs/SwupProgressPlugin.min.js"></script>
-
-<script src="/js/build/libs/SwupScrollPlugin.min.js"></script>
-
-<script src="/js/build/libs/SwupPreloadPlugin.min.js"></script>
-
-<script>
-    const swup = new Swup({
-        plugins: [
-            new SwupScriptsPlugin({
-                optin: true,
-            }),
-            new SwupProgressPlugin(),
-            new SwupScrollPlugin({
-                offset: 80,
-            }),
-            new SwupSlideTheme({
-                mainElement: ".main-content-body",
-            }),
-            new SwupPreloadPlugin(),
-        ],
-        containers: ["#swup"],
-    });
-</script>
-
-
+</body>
+</html>
 
 			
 <script src="/js/build/tools/imageViewer.js" type="module"></script>
