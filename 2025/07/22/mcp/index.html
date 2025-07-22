@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="KDAIer">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/2025/07/22/mcp/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+    
+    
+        
+        <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="模型上下文协议（MCP）">
+<meta property="og:url" content="http://example.com/2025/07/22/mcp/index.html">
+<meta property="og:site_name" content="KDAIer&#39;s Blog">
+<meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/images/redefine-og.webp">
+<meta property="article:published_time" content="2025-07-22T04:00:00.000Z">
+<meta property="article:modified_time" content="2025-07-22T03:53:08.209Z">
+<meta property="article:author" content="KDAIer">
+<meta property="article:tag" content="mcp">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/redefine-og.webp">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/KDAIer_Carnival.webp" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/KDAIer_Carnival.webp">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/KDAIer_Carnival.webp">
+    <!--- Page Info-->
+    
+    <title>
+        
+            模型上下文协议（MCP） | KDAIer&#39;s Blog
+        
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/build/tailwind.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
+
+    <!--- Font Part-->
+    
+    
+    
+        <link href="" rel="stylesheet">
+    
+    
+        <link href="" rel="stylesheet">
+    
+    
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"example.com","root":"/","language":"en"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"delete_mask":false,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"pangu_js":false,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":true,"family":null,"url":null},"english":{"enable":true,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":{"enable":true,"image":"/images/redefine-og.webp","description":"Hexo Theme Redefine, Redefine Your Hexo Journey."},"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"酥脆嘉年华的怪物世界","subtitle":{"text":["这是一个充满奇幻与乐趣的网页，这里汇聚了各种奇形怪状、风格各异的怪物!","嘉年华般的热闹氛围让每一次访问都充满新鲜感，酥脆的乐趣隐藏在每个角落！","快来加入这场怪物盛宴，感受独特的奇幻世界吧！"],"hitokoto":{"enable":true,"show_author":true,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":{"github":"https://github.com/KDAIer","instagram":null,"zhihu":null,"twitter":null,"email":"1425529116@qq.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Imagine","artist":"John Lennon","url":"https://evan.beee.top/music/Imagine%20-%20John%20Lennon.mp3","cover":"https://evan.beee.top/music/covers/Lennon_Imagine_Sleeve_1975.jpg","lrc":null},{"name":"Something Just Like This","artist":"Coldplay","url":"https://evan.beee.top/music/Something%20Just%20Like%20This%20-%20The%20Chainsmokers%E3%80%81Coldplay.mp3","cover":"https://evan.beee.top/music/covers/Something_Jus"}]},"mermaid":{"enable":true,"version":"latest"}},"version":"2.8.2","navbar":{"auto_hide":true,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"icon":"fa-solid fa-tags","path":"/tags/"},"About":{"icon":"fa-regular fa-user","submenus":{"Me":"/about","Github":"https://github.com/KDAIer"}},"Friends":{"icon":"fa-solid fa-link","path":"/links/"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":3,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"right","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<!-- hexo injector head_end start --><script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@7.1.2/dist/mermaid.esm.min.mjs">
+    mermaid.initialize(
+      startOnLoad: true,
+    );
+    </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+
+	<body>
+		<div class="progress-bar-container">
+	
+
+	
+	<span class="pjax-progress-bar"></span>
+	<!--        <span class="swup-progress-icon">-->
+	<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+	<!--        </span>-->
+	
+</div>
+
+<main class="page-container" id="swup">
+
+	
+
+	<div class="main-content-container flex flex-col justify-between min-h-dvh">
+		<div class="main-content-header">
+			<header class="navbar-container px-6 md:px-12">
+    <div class="navbar-content transition-navbar ">
+        <div class="left">
+            
+                <a class="logo-image h-8 w-8 sm:w-10 sm:h-10 mr-3" href="/">
+                    <img src="/images/KDAIer_Carnival.webp" class="w-full h-full rounded-sm">
+                </a>
+            
+            <a class="logo-title" href="/">
+                
+                KDAIer&#39;s Blog
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/archives"
+                                        >
+                                    <i class="fa-regular fa-archive fa-fw"></i>
+                                    ARCHIVES
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/tags/"
+                                        >
+                                    <i class="fa-solid fa-tags fa-fw"></i>
+                                    TAGS
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown"
+                                   href="#"
+                                        onClick=&#34;return false;&#34;>
+                                    <i class="fa-regular fa-user fa-fw"></i>
+                                    ABOUT
+                                    <i class="fa-solid fa-chevron-down fa-fw"></i>
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                        
+                                            <li>
+                                                <a href="/about">
+                                                    ME
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="https://github.com/KDAIer">
+                                                    GITHUB
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/links/"
+                                        >
+                                    <i class="fa-solid fa-link fa-fw"></i>
+                                    FRIENDS
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/archives"
+                        >
+                            <span>
+                                ARCHIVES
+                            </span>
+                            
+                                <i class="fa-regular fa-archive fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/tags/"
+                        >
+                            <span>
+                                TAGS
+                            </span>
+                            
+                                <i class="fa-solid fa-tags fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item-sub text-base my-1.5 flex flex-col w-full">
+                        
+                        <div class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary cursor-pointer text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                             navbar-data-toggle="submenu-About"
+                        >
+                            <span>
+                                ABOUT
+                            </span>
+                            
+                                <i class="fa-solid fa-chevron-right fa-sm fa-fw transition-all"></i>
+                            
+                        </div>
+                        
+
+                        
+                            <div class="flex-col items-start px-2 py-2 hidden" data-target="submenu-About">
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           href="/about">ME</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="https://github.com/KDAIer">GITHUB</a>
+                                    </div>
+                                
+                            </div>
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/links/"
+                        >
+                            <span>
+                                FRIENDS
+                            </span>
+                            
+                                <i class="fa-solid fa-link fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">4</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+		</div>
+
+		<div class="main-content-body transition-fade-up">
+			
+
+			<div class="main-content">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
+
+		<div class="article-title relative w-full">
+			
+			
+			
+			<img src="/images/MCP.png" alt="模型上下文协议（MCP）" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75" />
+			
+			<div class="w-full flex items-center absolute bottom-0 justify-start">
+				<h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">模型上下文协议（MCP）</h1>
+			</div>
+			
+		</div>
+
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+				<img src="/images/KDAIer_Carnival.webp">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">KDAIer</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2025-07-22 12:00</span>
+        <span class="mobile">2025-07-22 12:00</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2025-07-22 11:53:08</span>
+            <span class="mobile">2025-07-22 11:53:08</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/mcp/">mcp</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>6.8k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>23 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<p>模型上下文协议（Model Context Protocol，简称 MCP）是2024年底Anthropic提出的一个开放标准，旨在统一大规模模型（LLM）与外部工具、数据源的交互方式。它类似于“AI 的 USB-C 接口”，为模型与各种外部资源提供一种通用、安全的通信机制。MCP 能让 AI 应用像使用 USB 设备一样，动态发现、选择并调用所需的工具和数据，而不再依赖于每个模型/工具组合单独硬编码的接口。随着 AI 工具集的快速增长，MCP 的出现极大地简化了 AI 系统的开发流程，使模型可以跨平台、跨模态地整合信息和能力。目前，MCP 已被 Anthropic、OpenAI、百度等多家机构采用，业内也涌现了如 MCP.so、Glama、PulseMCP 等第三方生态平台，为开发者提供了数千个现成的 MCP 服务器资源。本篇文章将基于论文《Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions》及相关权威资料，深入剖析 MCP 的架构、协议流程、通信机制、安全威胁及典型应用，并与 RAG 进行对比，最后展望其未来发展方向。</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/MCP.png" alt="MCP"></p>
+<h2 id="MCP-核心架构与组件"><a href="#MCP-核心架构与组件" class="headerlink" title="MCP 核心架构与组件"></a>MCP 核心架构与组件</h2><p>MCP 采用典型的<strong>客户端-服务器架构</strong>。其主要组成包括：</p>
+<ul>
+<li><p><strong>MCP Host（主机环境）</strong>：这是运行 AI 模型或应用的环境，如 Claude Desktop 聊天应用、面向代码的智能 IDE（如 Cursor）、各种 AI 代理框架等。Host 内部嵌入 MCP 客户端，并集成交互界面及本地资源。主机环境负责接收用户输入，呈现对话或界面，并最终将用户请求交给 MCP 客户端。</p>
+</li>
+<li><p><strong>MCP Client（协议客户端）</strong>：内置于 Host 中的组件，负责同 MCP 服务器进行协议级通信。Client 与每个服务器之间通过一对一的连接进行通信，并在启动时执行功能发现。具体而言，Client 会向 MCP 服务器发出查询请求：“你拥有哪些功能？”服务器返回其 <strong>工具（Tools）</strong>、<strong>资源（Resources）</strong> 和 <strong>提示模板（Prompts）</strong> 等可用能力清单。在正式会话中，Client 接收来自 AI 模型的指令或决定，并根据请求选择合适的 MCP 服务器和工具，同时处理来自服务器的响应和通知，以确保数据和状态在 Host 与外部系统之间安全传递。MCP 客户端还负责对工具使用进行统计、采样等，以辅助性能优化和监控。</p>
+</li>
+<li><p><strong>MCP Server（协议服务器）</strong>：独立运行的小型服务程序，负责对外暴露具体功能模块和数据接口，并通过 MCP 协议与 Client 交互。每个 MCP 服务器通常专注于某一类工具或数据源的集成，例如对接 GitHub、Slack 或企业内部数据库等。MCP 服务器将能力分为三大类：<strong>工具（Tools）</strong>、<strong>资源（Resources）</strong> 和 <strong>提示（Prompts）</strong>：</p>
+<ul>
+<li><strong>工具（Tools）</strong>：提供执行外部操作的能力，类似传统意义上的函数或 API。通过工具，MCP 服务器可以在模型请求时自动调用外部服务或 API，并返回结果给模型。例如，一款天气查询工具可让 AI 模型获取实时气象数据；一款数据库工具可让模型查询企业客户记录。相比于多个独立的函数调用接口，MCP 的工具机制使得功能发现和调用更加标准化和自动化。</li>
+<li><strong>资源（Resources）</strong>：向 AI 模型提供可查询的数据集和信息。资源可以是结构化数据库、文档库、日志、云端存储等，当模型需要访问数据时，MCP 服务器会检索并提供相应内容。举例来说，销售助理机器人可以通过资源访问产品手册或知识库；业务报告分析可能通过资源查询历史交易数据。</li>
+<li><strong>提示模板（Prompts）</strong>：预定义的交互模板或工作流示例，用于提高任务执行效率和输出的一致性。Prompt 在 MCP 服务器上配置后，可以被多个模型复用，例如客服机器人可能使用统一的自动回复模板来处理常见问题，数据标注任务可能使用固定格式的提示模板等，从而保证多次任务之间的风格和质量一致。</li>
+</ul>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/MCP_workflow.png" alt="MCP_workflow"></p>
+</li>
+</ul>
+<p><em>图：MCP 协议的总体架构示意。MCP 通过标准化的 Client-Server 架构，将 Host（AI 应用环境）与外部工具、数据源无缝连接。Host 内的 MCP Client 负责与多个 MCP Server 建立 1:1 连接。各类 MCP Server 暴露 Tools、Resources、Prompts 等能力，可访问本地数据源或远程服务，并以 JSON-RPC 等协议与 Host 交换消息。</em></p>
+<p>在 MCP 的整体架构中，**传输层（Transport Layer）*<em>起到安全通信的作用。当前支持两种主要方式：**本地 STDIO**（适用于客户端与服务器运行在同一机器或环境中时的标准输入输出流通信）和*<em>HTTP+SSE</em></em>（适用于远程部署，使用 HTTP 请求与服务器交互，并通过 Server-Sent Events 进行实时推送）。所有 MCP 通信使用 JSON-RPC 2.0 标准封装，保证消息请求、响应和通知的结构一致。通信过程通常如下：客户端启动时依次连接所有配置的 MCP 服务器并发起功能发现请求，服务器返回其可用工具/资源列表；随后在正常会话中，客户端根据模型决策发出具体调用请求，服务器执行对应操作并将结果回传；同时，服务器还通过通知（notifications）机制向客户端推送状态更新或中间数据，保持双向实时同步。</p>
+<h3 id="MCP-服务器生命周期"><a href="#MCP-服务器生命周期" class="headerlink" title="MCP 服务器生命周期"></a>MCP 服务器生命周期</h3><p>MCP 服务器的安全与稳定运行贯穿其<strong>创建（Creation）</strong>、**运行（Operation）<strong>和</strong>更新（Update）**三个生命周期阶段。如下图所示，各阶段对应不同的关键任务和潜在威胁：</p>
+<p><img lazyload="" src="/images/loading.svg" data-src="/images/MCP_server.png" alt="MCP_server"></p>
+<p><em>图：MCP 服务器组件和生命周期。MCP 服务器由元数据、配置文件、工具列表、资源列表、提示模板等组件构成。在<strong>创建阶段</strong>需完成服务器注册、安装部署和代码完整性校验，防范名称冲突、安装包冒充或后门植入等风险；在<strong>运行阶段</strong>负责接收并执行工具调用、处理命令，并保证在沙箱中隔离执行，防止命令冲突或沙箱逃逸；在<strong>更新阶段</strong>则进行权限验证、版本管理和淘汰旧版等操作，以避免权限滥用或配置漂移。</em></p>
+<ul>
+<li><strong>创建阶段</strong>：在此阶段，新服务器完成注册和部署。服务器必须被赋予唯一的名称和身份，以供客户端发现和连接。随后安装部署流程需确保正确引入所有配置文件、源代码和依赖包。关键环节之一是<strong>代码完整性验证</strong>：通过签名校验或哈希校验等手段，确保服务器代码未被篡改，防止后门植入。一旦完成创建阶段，服务器即可上线并响应客户端请求。</li>
+<li><strong>运行阶段</strong>：服务器开始实际处理客户端请求并调度工具。在这一阶段，服务器按照请求定位并调用适当的工具或资源执行操作。例如，当模型发出查询天气的命令时，MCP 服务器会触发相应的天气查询工具，并返回结果。服务器还需处理<strong>命令解析</strong>（包括可能的多命令或斜线命令），并解决不同功能间的潜在命令名称冲突。为了安全性，工具执行被置于隔离的运行环境（沙箱）中，确保即使工具代码有缺陷或恶意行为，也无法危害宿主环境。在运行期间，服务器应保持稳定的执行环境，通过日志和监控捕捉异常，实现高可用的任务服务。</li>
+<li><strong>更新阶段</strong>：随着时间推移，MCP 服务器需要引入新工具、修复漏洞或淘汰过时功能，故而进入更新流程。这包括修改服务器的<strong>权限配置</strong>，确保更新后权限边界正确无误，防止旧有权限被意外保留。同时，需要进行<strong>版本控制管理</strong>，管理好不同版本的兼容性，防止发布引入新的安全漏洞。对于旧版本的停用或卸载也很重要，以避免攻击者利用已知漏洞对旧版服务器进行攻击。整个更新过程中，应采用 CI/CD 流水线、版本签名等手段，保证更新的安全和一致性。</li>
+</ul>
+<h2 id="安全威胁模型与防护机制"><a href="#安全威胁模型与防护机制" class="headerlink" title="安全威胁模型与防护机制"></a>安全威胁模型与防护机制</h2><p>由于 MCP 提供了 AI 系统与外部世界的直接接口，其每个阶段均潜藏安全风险。研究指出，MCP 的安全威胁主要可归纳如下：</p>
+<ul>
+<li><strong>注册和部署阶段风险</strong>：恶意注册（名称冲突）导致用户连接到伪造服务器；恶意安装包（Installer Spoofing）诱导用户安装包含后门的服务器软件；代码篡改或签名绕过可能在服务器中植入恶意逻辑。</li>
+<li><strong>运行阶段风险</strong>：工具和命令名称冲突可导致错误调用不安全工具；不安全的斜线命令解析可能引发权限提升或执行未授权指令；沙箱逃逸风险使得在服务器上执行的代码突破隔离，访问主机系统资源。</li>
+<li><strong>更新阶段风险</strong>：权限持久化（Privilege Persistence）指过期的凭证或角色未及时撤销，攻击者可继续利用先前的授权操作；版本管理不当（Vulnerable Versions）会导致部署含有已知漏洞的旧版服务器；配置漂移（Configuration Drift）则使服务器配置随时间偏离安全基线，带来潜在漏洞。</li>
+</ul>
+<p>针对上述威胁，需要采取多层防护措施：</p>
+<ul>
+<li><strong>沙箱和最小权限</strong>：在运行阶段，将工具执行置于强隔离的沙箱环境中。可以使用容器（如 Docker）或虚拟化技术限制每个工具的系统访问权限，严格控制其网络和文件系统的可见性。如果可能，还应配置 ACL 策略，仅允许必要的外部通信。</li>
+<li><strong>身份验证与签名</strong>：在创建和更新阶段，所有 MCP 服务器包和配置应经过数字签名和完整性校验。公私钥签名可防止安装包被篡改，而哈希校验可确认证书或版本文件无异常，避免后门代码混入。此外，实现权限管理系统，确保只有经过验证的客户端和服务器才能相互通信。</li>
+<li><strong>命名空间和注册管理</strong>：通过集中式注册表或官方平台（如 MCP.so、Glama）来管理服务器名称空间。官方仓库应对发布的 MCP 服务器进行审计、评级，提供信誉和验证机制，减少同名冲突和恶意服务器传播的可能。</li>
+<li><strong>监控与审计</strong>：部署详细的日志和审计机制，记录工具调用、权限变更以及配置更新等关键操作。一旦发生配置漂移或权限未撤销等问题，及时触发警报并回滚到安全状态。对于部署在云端（如 Cloudflare）的 MCP 服务，应采用多租户隔离和实时监测，以防敏感数据泄露。</li>
+<li><strong>定期更新与自动化</strong>：通过自动化管道（CI/CD）快速发布补丁和更新，防止出现长期的漏洞窗口。使用版本控制和自动化测试确保更新不会引入新的冲突。同时，应提供老版本回滚警告和淘汰机制，避免长时间运行过时的软件。</li>
+</ul>
+<h2 id="典型应用场景"><a href="#典型应用场景" class="headerlink" title="典型应用场景"></a>典型应用场景</h2><p>MCP 的设计目标是让各种 AI 应用能方便地调用外部工具和数据。以下几个场景充分体现了 MCP 的价值：</p>
+<ul>
+<li><strong>AI Agent（智能多步骤任务代理）</strong>：现代 AI 代理需要跨多个系统自动执行复杂任务。借助 MCP，代理可以轻松发现并使用第三方工具。例如，一个处理客户升级请求的邮件代理可以按步骤调用不同工具：先用 <code>classify_issue</code> 工具识别问题类型，再用 <code>fetch_customer_data</code> 工具查询用户档案，然后用 <code>draft_email</code> 提示模板生成回复草稿，如有需要则用 <code>create_ticket</code> 工具在工单系统中提出新工单，最后用 <code>send_email</code> 工具发送最终邮件。这些工具可以是内部托管的 MCP 服务器上的功能，也可以是像工单系统、电子邮件服务、CRM 系统等外部服务通过 MCP 标准化接口暴露出的能力。MCP 让 AI 代理在多个任务之间无缝切换，无需为每种服务编写单独的集成代码。</li>
+<li><strong>IDE 编程助手</strong>：在软件开发领域，IDE 中集成的 AI 编码助手（如 Cursor、Codeium、JetBrains Copilot Studio）可以使用 MCP 来扩展功能。例如 Cursor 通过 MCP 让 AI 模型访问代码仓库、构建流水线、文档平台等资源。当开发者在 IDE 中输入指令时，AI 代理判断是否需要调用外部工具：若需要，它将通过 MCP 客户端向合适的服务器发送请求，由服务器定位工具并完成相应操作（如运行测试、执行代码分析、自动修改文件等），然后将结果返回给代理。这一流程自动化了重复性任务，减少了人为错误，提高了开发效率。</li>
+<li><strong>企业工作流管理</strong>：对于企业级应用，MCP 能将知识库、日程、邮件、财务等系统接入智能代理。例如，客服自动化系统可以通过 MCP 访问内部知识库、客户数据库和邮件服务，实现智能问答与任务调度。金融机构可用 MCP 将交易平台与风控模型对接，自动执行风险评估和合规检查。举例来说，Cloudflare 推出的云端 MCP 服务使企业可以远程部署 MCP 服务器并通过 OAuth 控制访问。这样多个终端（Web、桌面、移动）都能安全调用中心化的 MCP 工具链，方便在组织级范围内进行 AI 驱动的工作流编排。</li>
+<li><strong>其他场景</strong>：此外，还有诸多场景正在探索。例如，使用 MCP 的微软 Copilot Studio 可通过低代码方式构建支持多个 API 的自定义智能代理；MCP 还可用于将工业控制系统、安全监测平台等专业领域接入 AI 助手，实现领域自适应的对话和操作。当前市场上已有专为不同行业定制 MCP 服务器的案例，如金融平台采用 MCP 提高数据处理效率，支付平台（Stripe）通过 MCP 将支付 API 暴露给 AI 助手等。</li>
+</ul>
+<h2 id="MCP-与-RAG-的对比"><a href="#MCP-与-RAG-的对比" class="headerlink" title="MCP 与 RAG 的对比"></a>MCP 与 RAG 的对比</h2><p>在增强模型知识和能力方面，最常见的另一范式是<strong>检索增强生成（Retrieval-Augmented Generation，RAG）</strong>。RAG 通过在模型提示中插入检索到的文档来补充实时信息，而 MCP 则通过工具调用协议为模型提供交互能力。两者的区别主要体现在以下方面：</p>
+<ul>
+<li><strong>上下文格式</strong>：RAG 通常将检索结果以纯文本形式拼接到 Prompt 中，作为模型的附加上下文。而 MCP 则采用结构化上下文，通过标准化协议将信息作为独立的数据片段传递给模型。模型能够识别带标签的上下文段（如 JSON 格式的 “user_profile”、“order_history”），并据此进行推理。这种**命名空间（Namespacing）**的方法让上下文更加清晰可读，并支持结构化数据（如数据库记录）。</li>
+<li><strong>代币使用成本</strong>：由于 RAG 的检索内容直接进入 Prompt，会消耗大量令牌。随着添加的文档越多，Prompt 越长，导致推理成本和延迟都会显著增加。MCP 在这一点上更为高效，因为工具调用时发送的是结构化引用而非长文本，当返回信息时也通常只返回紧要结果，减少了重复的文本传输。因此 MCP 在上下文管理上通常有更低的令牌开销。</li>
+<li><strong>检索引擎 vs. 协议机制</strong>：RAG 常用的检索引擎是向量数据库（如 OpenSearch、Pinecone 等）。它依赖对大量文档进行相似度搜索，将最相关的文本段喂入模型。MCP 不是通过相似度检索提供上下文，而是通过连接到外部系统并以 API 请求形式拉取信息。换言之，MCP 本质上是为模型提供一套工具使用接口，让模型不仅能获取数据，还能<strong>主动操作</strong>外部服务。</li>
+<li><strong>工具调用能力</strong>：RAG 本身不支持主动调用外部操作；模型即便“知道”答案，也无法修改外部数据或触发工作流，它只能提供基于检索内容的回复。MCP 则原生支持<strong>工具调用</strong>，模型可以直接执行 API 调用、数据库更新等操作，这使其特别适用于需要智能代理控制外部系统的场景。例如，前述客服代理案例中，MCP 允许机器人在发送回复后自动创建支持单，而在 RAG 框架下则无法做到这一点，只能给出文字建议。</li>
+<li><strong>设计哲学与生态</strong>：RAG 更偏向“被动式”的知识补充和提升，适合需要快速接入外部文档库的场景，如问答系统、文档搜索等。而 MCP 则强调“主动式”的跨系统融合和操作控制，体现了 Agent 驱动的设计理念。RAG 对模型无特殊要求，任何可通过提示的模型都可以使用；MCP 则需要模型和客户端具备解释结构化协议的能力（目前如 Claude、带 Agent SDK 的 OpenAI 模型已支持），以及客户端与服务器端共同遵守协议规范。</li>
+<li><strong>典型适用场景</strong>：RAG 在需要补充大量领域知识（如法律文档检索、文献综述、教育答疑等）时更有效；MCP 则在需要高效接口调用和工作流编排（如自动化办公、DevOps 工具集成、动态业务流程等）时更合适。两者并非完全互斥：实践中可以结合使用——例如，在 MCP 通道中也可内部使用向量检索技术来丰富特定资源，或让 RAG 系统在回答中推荐调用某些 MCP 工具。</li>
+</ul>
+<p>综上所述，RAG 和 MCP 在提升 LLM 能力方面各有侧重：RAG 擅长静态知识检索，MCP 擅长动态工具融合。正确地根据应用需求选择二者或两者结合，将极大增强 AI 系统的表现力和灵活性。</p>
+<h2 id="生态系统与支持工具"><a href="#生态系统与支持工具" class="headerlink" title="生态系统与支持工具"></a>生态系统与支持工具</h2><p>MCP 社区正在快速发展，已有丰富的服务器库和开发框架：</p>
+<ul>
+<li><strong>社区服务器注册表</strong>：目前尚无官方中央市场，社区驱动的平台逐渐出现，如 MCP.so、Glama、PulseMCP 等网站，这些平台分别托管了数千个 MCP 服务器。根据统计，截至 2025年3月，MCP.so 平台已收录近 4.8 千个服务器，Glama 平台收录 ~3.3 千个。这些平台让开发者可以轻松发现、试用或贡献 MCP 服务器，实现生态共享。桌面端工具如 Dockmaster、Toolbase 等也提供本地部署管理功能，便于在本地环境中快速运行 MCP 服务器。</li>
+<li><strong>SDK与框架</strong>：官方发布了多语言的 MCP SDK（包括 TypeScript、Python、Java、Kotlin、C# 等），简化了客户端与服务器开发。社区还贡献了多种框架（如 FastMCP、EasyMCP、MCP Inspector 等）用于快速定义工具、生成 API 文档和部署 MCP 服务。自动化平台如 Foxy Contexts、Higress MCP Server Hosting 等，通过使用 WASM 插件或 Envoy 代理，将传统服务封装成 MCP 工具，从而降低开发者的集成工作量。</li>
+<li><strong>平台支持</strong>：许多开发平台、云服务已经集成 MCP。比如 Anthropic 的 Claude Desktop 已内置 MCP 客户端和多种官方服务器；OpenAI 的 Agent SDK 增加了对 MCP 的支持，使 ChatGPT 代理可以调用标准化的外部工具；微软、Cloudflare 等也推出了针对云资源管理的 MCP 服务器或服务（例如 Cloudflare 提供远程 MCP 托管并集成 OAuth 认证），使企业级用户能够轻松使用 MCP。</li>
+</ul>
+<p>整个 MCP 生态呈现出“众包式”特点：大量实验性服务器不断涌现，初创项目和社区组织针对各领域（如数据分析、项目管理、财务系统等）开发定制 MCP 连接器，为 AI 模型提供丰富多元的插件能力。</p>
+<h2 id="未来发展趋势"><a href="#未来发展趋势" class="headerlink" title="未来发展趋势"></a>未来发展趋势</h2><p>MCP 作为一个新兴协议，未来仍有许多待探索的方向：</p>
+<ul>
+<li><strong>跨模态（Multi-Modal）支持</strong>：现有 MCP 主要面向文本和一般 API 接口，未来有望扩展到视觉、音频等多模态信息场景。一些文章指出，MCP 可以实现不同模型和数据类型间的无缝通信，使 AI 系统跨越文本、图像、音频等多种输入并行工作。例如，将视觉识别工具或语音识别模型作为 MCP 工具集成，让文本模型能够引用图像内容或音频事件，进一步增强对真实世界的感知。BytePlus 的分析认为，MCP 架构可支持“多模态集成”，通过上下文管理和跨模态翻译层，将视觉、听觉信息与文本上下文关联，使模型获得更加丰富、动态的感知能力。</li>
+<li><strong>低代码/声明式工具集成</strong>：为降低开发门槛，未来可能出现更友好的 MCP 工具注册与编排方式。例如，通过 YAML 或图形化界面来定义工具链和工作流，而不是手写大量代码。一些研究和博客建议支持类似 <strong>toolchains.yaml</strong> 的方案，让开发者以声明式格式组合工具流程。同时，低代码平台（如微软 Copilot Studio 的多智能体编排）可能提供界面化工具，让业务人员也能通过拖拽或表单方式构建 MCP 驱动的自动化流程，而无需深入编程。</li>
+<li><strong>客户端自治与智能化</strong>：未来 MCP 客户端（Host 侧）本身可能具备更强的智能决策能力。当前客户端主要充当通信桥梁，但未来可集成简易模型或规则引擎，以在本地预先筛选或合并多服务器的响应。比如，客户端可以基于对话上下文自动优先调用最相关的服务器，或并行下发多个服务器请求并选取最佳答案，从而提升效率。增强的本地缓存和离线模式也能让客户端在网络条件受限时仍执行基本任务。</li>
+<li><strong>多代理协同编排</strong>：随着多智能体系统兴起，<strong>情境感知的代理协作</strong>成为研究热点。当多个 AI 代理通过 MCP 共享上下文和任务时，会出现自发的协同行为和竞争关系。SOC Radar 提到，带有记忆和持久上下文的代理可以相互分配子任务并相互学习，但也需要对代理意图进行验证，防止“流氓代理”行为。未来 MCP 可能引入新的协议层，支持多代理间的协作逻辑，例如内置“黑名单”、“白名单”机制或仲裁流程，使多个代理能基于共同规则安全互动。此外，<strong>多步骤工作流</strong>将更复杂，MCP 服务器或客户端可能内置支持条件分支的图形化流程（如类 LangGraph 的图形编排），以便在场景需要时灵活决策。</li>
+<li><strong>治理与安全合规</strong>：随着 MCP 在企业级应用的普及，对安全性、可审计性和合规性的需求将不断增加。未来可能出现内置的安全标签和审计功能，例如对交互输出进行“提示公证”（Prompt Notarization）或对关键操作打标签（如“GDPR 安全”或“需人工复审”标记），以提高系统可解释性。此外，社区可能推动 MCP 标准中加入权限声明、审计日志格式等扩展，从协议层面支持监管合规。</li>
+</ul>
+<p>总体而言，MCP 有望在未来形成一个<strong>泛 AI 工具互联层</strong>：不仅局限于文本或单一模型，而是扩展为支持多模态、多模型（如同时使用 OpenAI、Anthropic、Meta 等多个底层模型）的大规模协同工作框架。我们已经看到诸如标准化适配层、无缝切换不同模型的实验（类似“llm-router”方案）在出现。随着生态成熟，MCP 或许将成为 AI 代理间“互操作协议”的基础，与 LLM 本身和各种部署平台共生发展。</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>Model Context Protocol 作为新一代 AI-工具集成协议，正在重塑我们构建智能系统的思路。从当前的研究与产业实践来看，MCP 通过统一接口和工作流，大幅降低了模型调用外部资源的复杂性。本文基于最新论文和技术文档详细梳理了 MCP 的架构、流程、安全风险及典型应用场景，并与传统的 RAG 模式进行了对比。总体看，MCP 让 AI 应用从“被动查询”转向“主动操控”，使模型能够像人一样调用身边的工具完成任务，同时也带来了新的安全与治理挑战。未来，随着更多生态厂商和社区的参与，MCP 的标准和生态体系将日益完善，其在跨模态、多智能体编排以及企业级部署等方面的能力也将不断加强。对 AI 工程师和安全研究者而言，关注 MCP 的发展、积极参与其生态建设，并在实践中探索最佳的安全防护和治理策略，将是接下来一段时间的重要课题。</p>
+<p><strong>参考资料：</strong> 本文内容参考自 X. Hou 等人发表于《Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions》、Anthropic 官方博客、MCP 官方文档、行业分析文章及各类社区贡献文档和案例（如 Cloudflare、Cursor、DevContentOps 等）等。</p>
+
+		</div>
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> 模型上下文协议（MCP）</li>
+        <li><strong>Author:</strong> KDAIer</li>
+        <li><strong>Created at
+                :</strong> 2025-07-22 12:00:00</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2025-07-22 11:53:08
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://kdaier.github.io/2025/07/22/mcp/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+		</div>
+		
+
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/mcp/">#mcp</a>&nbsp;
+			</li>
+			
+		</ul>
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2025/07/21/rag/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item">检索增强生成（RAG）</span>
+						<span class="post-nav-item">Next posts</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+		<div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+			<div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="gitalk-container"></div>
+    <script data-swup-reload-script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js"></script>
+    <script data-swup-reload-script>
+
+        function loadGitalk() {
+            let __gitalk__pathname = decodeURI(location.pathname);
+            const __gitalk__pathnameLength = __gitalk__pathname.length;
+            const __gitalk__pathnameMaxLength = 50;
+            if (__gitalk__pathnameLength > __gitalk__pathnameMaxLength) {
+                __gitalk__pathname = __gitalk__pathname.substring(0, __gitalk__pathnameMaxLength - 3) + '...';
+            }
+
+            try {
+                Gitalk && new Gitalk({
+                    clientID: 'Ov23li2y9j1Z41svDLvB',
+                    clientSecret: '13b528d68f35fae272cbd083642413075ebe5ef2',
+                    repo: 'special-octo-potato',
+                    owner: 'KDAIer',
+                    admin: ['KDAIer'],
+                    id: __gitalk__pathname,
+                    language: 'en',
+                    proxy: 'https://github.com/login/oauth/access_token'
+                }).render('gitalk-container');
+
+            } catch (e) {
+                window.Gitalk = null;
+            }
+        }
+
+        if ('true') {
+            const loadGitalkTimeout = setTimeout(() => {
+                loadGitalk();
+                clearTimeout(loadGitalkTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadGitalk);
+        }
+    </script>
+
+
+
+        
+    
+</div>
+
+		</div>
+		
+	</div>
+
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">On this page</div>
+		<div class="page-title">模型上下文协议（MCP）</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MCP-%E6%A0%B8%E5%BF%83%E6%9E%B6%E6%9E%84%E4%B8%8E%E7%BB%84%E4%BB%B6"><span class="nav-text">MCP 核心架构与组件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#MCP-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-text">MCP 服务器生命周期</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E5%85%A8%E5%A8%81%E8%83%81%E6%A8%A1%E5%9E%8B%E4%B8%8E%E9%98%B2%E6%8A%A4%E6%9C%BA%E5%88%B6"><span class="nav-text">安全威胁模型与防护机制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B8%E5%9E%8B%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-text">典型应用场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MCP-%E4%B8%8E-RAG-%E7%9A%84%E5%AF%B9%E6%AF%94"><span class="nav-text">MCP 与 RAG 的对比</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9F%E4%B8%8E%E6%94%AF%E6%8C%81%E5%B7%A5%E5%85%B7"><span class="nav-text">生态系统与支持工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF"><span class="nav-text">未来发展趋势</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AE%BA"><span class="nav-text">结论</span></a></li></ol>
+
+	</div>
+</div>
+	</div>
+	
+</div>
+			</div>
+
+			
+		</div>
+
+		<div class="main-content-footer">
+			<footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2025&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">KDAIer</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        4 posts in total
+                    </span>
+                    
+                        <span>
+                            25.4k words in total
+                        </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.8.2</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+		</div>
+	</div>
+
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+		<li class="go-comment">
+			<i class="fa-regular fa-comments"></i>
+		</li>
+		
+	</ul>
+</div>
+	</div>
+	
+
+	<div class="right-side-tools-container">
+		<div class="side-tools-container">
+	<ul class="hidden-tools-list">
+		<li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-plus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-minus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+			<i class="fa-regular fa-moon"></i>
+		</li>
+
+		<!-- rss -->
+		
+
+		
+
+		<li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+			<i class="fa-regular fa-arrow-down"></i>
+		</li>
+	</ul>
+
+	<ul class="visible-tools-list">
+		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+			<i class="fa-regular fa-cog fa-spin"></i>
+		</li>
+		
+		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+			<i class="arrow-up fas fa-arrow-up"></i>
+			<span class="percent"></span>
+		</li>
+		
+		
+	</ul>
+</div>
+	</div>
+
+	<div class="image-viewer-container">
+	<img src="">
+</div>
+
+	
+
+</main>
+
+
+
+<script src="/js/build/libs/Swup.min.js"></script>
+
+<script src="/js/build/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/build/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+			
+<script src="/js/build/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/build/utils.js" type="module"></script>
+
+<script src="/js/build/main.js" type="module"></script>
+
+<script src="/js/build/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/build/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/build/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/build/layouts/categoryList.js" type="module"></script>
+
+
+
+
+
+    
+<script src="/js/build/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/build/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/build/tools/runtime.js"></script>
+
+    
+<script src="/js/build/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/js/build/libs/Typed.min.js"></script>
+
+  
+<script src="/js/build/plugins/typed.js" type="module"></script>
+
+
+
+
+    
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js"></script>
+    
+    
+<script src="/js/build/plugins/mermaid.js"></script>
+
+
+
+
+
+
+    
+<script src="/js/build/libs/anime.min.js"></script>
+
+
+
+
+
+    
+<script src="/js/build/tools/tocToggle.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/build/layouts/toc.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/build/plugins/tabs.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+<script src="/js/build/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+<script src="/js/build/layouts/essays.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+
+				
+					<div id="aplayer"></div>
+
+<script src="/js/build/libs/APlayer.min.js"></script>
+
+
+<script src="/js/build/plugins/aplayer.js"></script>
+
+
+						
+							<canvas class="fireworks"
+								style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+							<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+							<script type="text/javascript" src="/js/firework.js"></script>
+
+	</body>
+
+</html>
