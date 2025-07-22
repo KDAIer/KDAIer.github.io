@@ -1,10 +1,10 @@
 body {
-    cursor: url(' /img/anormal.cur'),
-        default;
+    cursor: url('/cur/normal.cur'), default;
 }
 
 a,
-img {
-    cursor: url(' /img/apointer.cur'),
-        default;
+button,
+input[type="submit"],
+input[type="button"] {
+    cursor: url('/cur/normal.cur'), pointer;
 }
